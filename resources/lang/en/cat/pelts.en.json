@@ -81,6 +81,10 @@
             "one": "gray",
             "many": "colorful"
         },
+        "RUBY": {
+            "one": "red",
+            "many": "ruby red"
+        },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
         "TwoColour": "two color",
