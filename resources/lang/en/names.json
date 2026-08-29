@@ -405,6 +405,12 @@
     ],
     "TURQUOISE": [
       "rock"
+    "Black", "Black", "Black", "Shade", "Shaded", "Crow", "Raven", "Ebony", "Dark", "Grackle",
+    "Night", "Shadow", "Scorch", "Midnight", "Pepper", "Pitch", "Bat", "Burnt", "Coal", "Ink", "Inky",
+    "Char", "Charred", "Mulberry", "Night", "Evening", "Dark", "Murk", "Ghost"
+    ],
+    "CHALCOPYRITE": [
+    "Stone"
     ]
   },
 
