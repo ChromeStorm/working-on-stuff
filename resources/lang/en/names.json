@@ -283,90 +283,12 @@
     "Hawk", "Chestnut", "Fir", "Starling", "Peat", "Fox", "Bat"
     ],
     "BLACK": [
-    "Black", "Black", "Black", "Shade", "Shaded", "Crow", "Raven", "Ebony", "Dark", "Grackle", "Bat", "Flint", "Storm", "Skunk",
-    "Night", "Shadow", "Scorch", "Midnight", "Pepper", "Pitch", "Bat", "Burnt", "Coal", "Ink", "Inky", "Murk", "Rat", "Magpie",
-    "Char", "Charred", "Mulberry", "Evening", "Dark", "Ghost", "Mud", "Spider", "Shale", "Panther", "Starling", "Soot", "Wolf", "Badger", 
-    "Raccoon", "Skulk"
-    ]
-  },
-	
-	"colour_suffixes": {
-    "WHITE": [
-	"cloud", "frost", "moon", "web", "dove", "ice", "snow", "egg", "shell", "smoke", "bone", "chill", "fog", "freeze", 
-	"gale", "ghost", "goose", "flash", "moth", "stone", "pebble", "rock"
+    "Black", "Black", "Black", "Shade", "Shaded", "Crow", "Raven", "Ebony", "Dark", "Grackle",
+    "Night", "Shadow", "Scorch", "Midnight", "Pepper", "Pitch", "Bat", "Burnt", "Coal", "Ink", "Inky",
+    "Char", "Charred", "Mulberry", "Night", "Evening", "Dark", "Murk", "Ghost"
     ],
-    "PALEGREY": [
-	"cloud", "frost", "web", "mist", "ice", "snow", "egg", "minnow", "smoke", "dust", "bone", "chill", "fog", "freeze", 
-	"gale", "goose", "flash", "ghost", "stone", "pebble", "rock", "boulder"
-    ],
-    "SILVER": [
-	"cloud", "storm", "frost", "ash", "stream", "web", "mist", "pool", "lake", "pebble", "rock", "stone", "boulder", 
-	"minnow", "smoke", "dust", "flash"
-    ],
-    "GREY": [
-	"cloud", "storm", "pool", "lake", "pebble", "rock", "stone", "boulder", "minnow", "smoke", "dust", "cinder", "badger", "raccoon"
-    ],
-    "DARKGREY": [
-	"storm", "ash", "shade", "pebble", "rock", "stone", "boulder", "smoke", "bat", "cinder", "night", "raven", "crow", "burn", 
-	"shadow", "dusk", "badger", "raccoon"
-    ],
-    "GHOST": [
-	"shadow", "shade", "dusk", "coal", "ink", "bat", "cinder", "ghost", "night", "raven", "crow", "burn", "badger", "raccoon"
-    ],
-    "BLOSSOM": [
-    "sun", "beam", "shine", "shell", "honey", "cougar", "owl", "moth", "sable", "dust", "flower", "blossom", "spring", "petal",
-    "rose", "bee", "moth", "owl", "cloud", "moon", "web", "dove", "egg", "shell", "smoke", "goose", "bloom"
-    ],
-	"DAWN": [
-	"beam", "dawn", "dazzle", "dew", "dream", "drizzle", "egg", "flicker", "glow", "hare", "haze", "moth", "mouse", "shell", "shimmer"
-	],
-    "PALEGINGER": [
-	"sun", "beam", "shine", "spark", "shell", "honey", "flash", "lion", "cougar"
-    ],
-    "GOLDEN": [
-	"sun", "beam", "shine", "spark", "blaze", "honey", "flash", "bee", "lion", "cougar", "bright", "gorse"
-    ],
-    "HONEY": ["sun", "beam", "shine", "spark", "blaze", "honey", "honey", "flash", "bee", "lion", "cougar", "bright", "bee", "root", "bumble",
-    "flower", "gorse"
-    ],
-    "GINGER": [
-	"burn", "sun", "beam", "shine", "spark", "blaze", "flame", "flare", "ember", "fox", "vixen"
-    ],
-    "DARKGINGER": [
-	"burn", "blaze", "flame", "flare", "ember", "fox", "vixen"
-    ],
-    "SIENNA": [
-	"burn", "blaze", "flame", "flare", "ember", "fox", "vixen"
-    ],
-    "CREAM": [
-	"sun", "beam", "shine", "spark", "shell", "honey", "flash", "lion", "cougar"
-    ],
-    "LIGHTBROWN": [
-	"root", "owl", "twig", "wood", "moth", "lion", "cougar"
-    ],
-    "LILAC": [
-	"flower", "heather", "dream", "dust", "lion", "cougar"
-    ],
-    "BROWN": [
-	"root", "owl", "twig", "wood", "moth", "bark", "branch", "burr"
-    ],
-    "GOLDEN-BROWN": [
-	"root", "owl", "twig", "wood", "moth", "bark", "branch", "burr"
-    ],
-    "MALLOW": [
-	"root","twig", "wood", "moth", "bark", "branch", "burr", "back"
-    ],
-    "DARKBROWN": [
-	"root", "bark", "shade", "owl", "oak", "wood", "moth", "branch", "burr"
-    ],
-    "CHOCOLATE": [
-	"root", "bark", "owl", "wood", "bat", "branch", "burr"
-    ],
-    "RUST":[
-    "burn", "blaze", "flame", "flare", "ember", "fox", "vixen", "bat"
-    ],
-    "BLACK": [
-	"shadow", "shade", "dusk", "coal", "ink", "bat", "cinder", "ghost", "night", "raven", "crow", "burn", "badger", "raccoon"
+    "CHALCOPYRITE": [
+    "Stone"
     ]
   },
 

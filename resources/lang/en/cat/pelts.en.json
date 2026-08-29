@@ -93,6 +93,10 @@
             "one": "brown",
             "many": "rusted brown"
         },
+        "CHALCOPYRITE": {
+            "one": "gray",
+            "many": "colorful"
+        },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
         "TwoColour": "two color",
