@@ -25,7 +25,8 @@
             "DARKBROWN": "brown",
             "CHOCOLATE": "brown",
             "RUST": "brown",
-            "CHALCOPYRITE": "white"
+            "CHALCOPYRITE": "white",
+            "RUBY": "ginger"
         },
         "pattern_types": {
             "Tabby": "tabbies",
