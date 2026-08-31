@@ -85,6 +85,14 @@
             "one": "red",
             "many": "ruby red"
         },
+        "QUARTZ": {
+            "one": "white",
+            "many": "shimmering"
+        },
+        "SAPPHIRE": {
+            "one": "blue",
+            "many": "sapphire blue"
+        },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
         "TwoColour": "two color",
