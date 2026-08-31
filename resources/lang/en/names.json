@@ -414,6 +414,12 @@
     ],
     "RUBY": [
     "Red", "Ruby"
+    ],
+    "QUARTZ": [
+      "White", "Quartz"
+    ],
+    "SAPPHIRE": [
+      "Blue", "Sapphire"
     ]
   },
 
