@@ -23,7 +23,8 @@
             "CHALCOPYRITE": "black",
             "RUBY": "ginger",
             "QUARTZ": "white",
-            "SAPPHIRE": "black"
+            "SAPPHIRE": "black",
+            "SANDSTONE": "ginger"
         },
         "pattern_types": {
             "Tabby": "tabbies",

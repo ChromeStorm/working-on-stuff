@@ -93,6 +93,10 @@
             "one": "blue",
             "many": "sapphire blue"
         },
+        "SANDSTONE": {
+            "one": "tan",
+            "many": "tan"
+        },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
         "TwoColour": "two color",

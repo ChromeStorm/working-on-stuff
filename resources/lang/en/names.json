@@ -323,22 +323,7 @@
 	"root", "bark", "owl", "wood", "bat", "branch", "burr"
     ],
     "BLACK": [
-    "Black", "Black", "Black", "Shade", "Shaded", "Crow", "Raven", "Ebony", "Dark", "Grackle",
-    "Night", "Shadow", "Scorch", "Midnight", "Pepper", "Pitch", "Bat", "Burnt", "Coal", "Ink", "Inky",
-    "Char", "Charred", "Mulberry", "Night", "Evening", "Dark", "Murk", "Ghost"
-    ],
-    "CHALCOPYRITE": [
-    "Stone"
-    ],
-    "RUBY": [
-    "Red", "Ruby"
-    ],
-    "QUARTZ": [
-      "White", "Quartz"
-    ],
-    "SAPPHIRE": [
-      "Blue", "Sapphire"
-	"shadow", "shade", "dusk", "coal", "ink", "bat", "cinder", "ghost", "night", "raven", "crow", "burn", "badger", "raccoon"
+    "shadow", "shade", "dusk", "coal", "ink", "bat", "cinder", "ghost", "night", "raven", "crow", "burn", "badger", "raccoon"
     ]
   },
 
