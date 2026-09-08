@@ -80,6 +80,25 @@
         "RUST": {
             "one": "brown",
             "many": "rusted brown"
+        "CHALCOPYRITE": {
+            "one": "gray",
+            "many": "colorful"
+        },
+        "RUBY": {
+            "one": "red",
+            "many": "ruby red"
+        },
+        "QUARTZ": {
+            "one": "white",
+            "many": "shimmering"
+        },
+        "SAPPHIRE": {
+            "one": "blue",
+            "many": "sapphire blue"
+        },
+        "SANDSTONE": {
+            "one": "tan",
+            "many": "tan"
         },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
