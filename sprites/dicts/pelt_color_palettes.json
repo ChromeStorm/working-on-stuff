@@ -885,6 +885,7 @@
         "newborn_exotic_pattern_fill_gradient_top": "#3A1C1D",
         "newborn_exotic_light_pattern": "#402022",
         "newborn_exotic_muzzle": "#3A1C1D"
+    },
     "CHALCOPYRITE": {
         "base": "#565357",
         "base_gradient_bottom": "#B0B092",

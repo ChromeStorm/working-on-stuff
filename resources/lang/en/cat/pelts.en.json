@@ -80,6 +80,7 @@
         "RUST": {
             "one": "brown",
             "many": "rusted brown"
+        },
         "CHALCOPYRITE": {
             "one": "gray",
             "many": "colorful"
