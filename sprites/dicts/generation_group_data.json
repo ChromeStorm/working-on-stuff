@@ -21,7 +21,12 @@
             "GOLDEN-BROWN": "brown",
             "DARKBROWN": "brown",
             "CHOCOLATE": "brown",
-            "RUST": "brown"
+            "RUST": "brown",
+            "CHALCOPYRITE": "black",
+            "RUBY": "ginger",
+            "QUARTZ": "white",
+            "SAPPHIRE": "black",
+            "SANDSTONE": "ginger"
         },
         "pattern_types": {
             "Tabby": "tabbies",
