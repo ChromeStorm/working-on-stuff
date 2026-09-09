@@ -22,11 +22,12 @@
             "DARKBROWN": "brown",
             "CHOCOLATE": "brown",
             "RUST": "brown",
-            "CHALCOPYRITE": "black",
-            "RUBY": "ginger",
-            "QUARTZ": "white",
-            "SAPPHIRE": "black",
-            "SANDSTONE": "ginger"
+            "CHALCOPYRITE": "rock",
+            "RUBY": "rock",
+            "QUARTZ": "rock",
+            "SAPPHIRE": "rock",
+            "SANDSTONE": "rock",
+            "AMETHYST": "rock"
         },
         "pattern_types": {
             "Tabby": "tabbies",

@@ -105,6 +105,10 @@
             "one": "tan",
             "many": "tan"
         },
+        "AMETHYST": {
+            "one": "violet",
+            "many": "violet"
+        },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
         "TwoColour": "two color",
