@@ -1036,7 +1036,7 @@
 
         "newborn_base": "#fdfafb",
         "newborn_base_gradient_bottom": "#ebe3df",
-        "newborn__base_gradient_top": "#fefafb",
+        "newborn_base_gradient_top": "#fefafb",
         "newborn_pattern": "#d2fbd1",
         "newborn_pattern_gradient_top": "#e3acf9",
         "newborn_pattern_fill": "#ecdddb",
