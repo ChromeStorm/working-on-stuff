@@ -109,6 +109,10 @@
             "one": "violet",
             "many": "violet"
         },
+        "TOURMALINE": {
+            "one": "red-green",
+            "many": "red-green"
+        },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
         "TwoColour": "two color",

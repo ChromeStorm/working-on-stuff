@@ -27,7 +27,8 @@
             "QUARTZ": "rock",
             "SAPPHIRE": "rock",
             "SANDSTONE": "rock",
-            "AMETHYST": "rock"
+            "AMETHYST": "rock",
+            "TOURMALINE": "rock"
         },
         "pattern_types": {
             "Tabby": "tabbies",

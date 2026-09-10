@@ -289,6 +289,9 @@
     ],
     "AMETHYST": [
       "Rock"
+    ],
+    "TOURMALINE": [
+      "Rock"
     ]
   },
 	
@@ -376,6 +379,9 @@
       "rock"
     ],
     "AMETHYST": [
+      "rock"
+    ],
+    "TOURMALINE": [
       "rock"
     ]
   },
