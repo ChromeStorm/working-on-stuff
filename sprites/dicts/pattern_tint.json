@@ -1,0 +1,37 @@
+{
+  "colour_groups":
+  {
+    "WHITE": "white",
+    "PALEGREY": "lightgrey",
+    "SILVER": "lightgrey",
+    "GREY": "darkgrey",
+    "DARKGREY": "darkgrey",
+    "GHOST": "ghost",
+    "BLACK": "black",
+    "BLOSSOM": "cream",
+    "CREAM": "cream",
+    "PALEGINGER": "lightginger",
+    "GOLDEN": "lightginger",
+    "GINGER": "darkginger",
+    "DARKGINGER": "darkginger",
+    "SIENNA": "sienna",
+    "LIGHTBROWN": "lightbrown",
+    "LILAC": "lilac",
+    "BROWN": "brown",
+    "GOLDEN-BROWN": "brown",
+    "DARKBROWN": "darkbrown",
+    "CHOCOLATE": "darkbrown",
+    "RUST": "rust"
+  },
+    "possible_tints": {
+    "basic": ["light", "dark"],
+    "black": ["light"],
+    "gray": ["dark"]
+  },
+  "tint_colours":
+  {
+    "dark": [0, 0, 0],
+    "light": [100, 100, 100],
+    "none": null
+  }
+}

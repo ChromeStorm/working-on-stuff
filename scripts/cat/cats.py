@@ -2488,6 +2488,7 @@ class Cat:
                 "tortie_pattern": self.pelt.tortie_pattern,
                 "skin": self.pelt.skin,
                 "tint": self.pelt.tint,
+                "pattern_tint": self.pelt.pattern_tint, #Chrome edit
                 "skill_dict": self.skills.get_skill_dict(),
                 "scars": self.pelt.scars or [],
                 "accessory": self.pelt.accessory,

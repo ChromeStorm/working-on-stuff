@@ -244,6 +244,7 @@ class Pelt:
         opacity: int = 100,
         scars: list = None,
         tint: str | None = None,
+        pattern_tint: str | None = None, # Chrome edit
         skin: str = "BLACK",
         white_patches_tint: str | None = None,
         newborn_sprite: str = None,
@@ -279,6 +280,7 @@ class Pelt:
         )
         self.tint = tint
         self.white_patches_tint = white_patches_tint
+        self.pattern_tint = pattern_tint #Chrome edit
         self.screen_scale = scripts.game_structure.screen_settings.screen_scale
 
         # converting old pose numbers into names
@@ -465,7 +467,7 @@ class Pelt:
         new_pelt.init_accessories(age)
         new_pelt.init_eyes(parents)
         new_pelt.init_pattern()
-        new_pelt.init_tint()
+        new_pelt.init_tint() #Chrome look at
 
         return new_pelt
 
@@ -1245,6 +1247,9 @@ class Pelt:
                 self.white_patches_tint = None
         else:
             self.white_patches_tint = None
+        # Pattern tint
+        # Chrome you need to edit this
+        # Make it so cats generate with pattern tints, make it so pattern tints clip to the patterns
 
     @property
     def white(self):
