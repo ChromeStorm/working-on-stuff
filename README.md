@@ -1,3 +1,7 @@
+# clustergen
+
+a mod of clangen that turns the cats into Eridians. See the clangen info below
+
 # clangen
 
 ## On AI & LLMs
