@@ -1,0 +1,15 @@
+Planned changes: 
+- Finish removing genders
+- Change cat sprites to eridians
+  -longhairs are spikier
+  -newborns are eggs
+  -white patches are crystal or other features
+  -scars need a new system entirely, to give different eridians their own distinct scar appearances
+- change all mentions of clan to cluster
+- change all mentions of kit to pebble
+- edit thoughts, events, and patrols to fit Eridians better
+
+Possible changes: 
+- overhaul the names entirely
+- afterlife changes
+- eridian hierarchy
