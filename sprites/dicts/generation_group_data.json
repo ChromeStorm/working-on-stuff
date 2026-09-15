@@ -31,7 +31,8 @@
             "SAPPHIRE": "rock",
             "SANDSTONE": "rock",
             "AMETHYST": "rock",
-            "TOURMALINE": "rock"
+            "TOURMALINE": "rock",
+            "TURQUOISE": "rock"
         },
         "pattern_types": {
             "Tabby": "tabbies",
