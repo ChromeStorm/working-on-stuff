@@ -287,6 +287,27 @@
     "Night", "Shadow", "Scorch", "Midnight", "Pepper", "Pitch", "Bat", "Burnt", "Coal", "Ink", "Inky", "Murk", "Rat", "Magpie",
     "Char", "Charred", "Mulberry", "Evening", "Dark", "Ghost", "Mud", "Spider", "Shale", "Panther", "Starling", "Soot", "Wolf", "Badger", 
     "Raccoon", "Skulk"
+    ],
+    "CHALCOPYRITE": [
+      "Rock"
+    ],
+    "RUBY": [
+      "Rock"
+    ],
+    "QUARTZ": [
+      "Rock"
+    ],
+    "SAPPHIRE": [
+      "Rock"
+    ],
+    "SANDSTONE": [
+      "Rock"
+    ],
+    "AMETHYST": [
+      "Rock"
+    ],
+    "TOURMALINE": [
+      "Rock"
     ]
   },
 	
@@ -366,7 +387,28 @@
     "burn", "blaze", "flame", "flare", "ember", "fox", "vixen", "bat"
     ],
     "BLACK": [
-	"shadow", "shade", "dusk", "coal", "ink", "bat", "cinder", "ghost", "night", "raven", "crow", "burn", "badger", "raccoon"
+    "shadow", "shade", "dusk", "coal", "ink", "bat", "cinder", "ghost", "night", "raven", "crow", "burn", "badger", "raccoon"
+    ],
+    "CHALCOPYRITE": [
+      "rock"
+    ],
+    "RUBY": [
+      "rock"
+    ],
+    "QUARTZ": [
+      "rock"
+    ],
+    "SAPPHIRE": [
+      "rock"
+    ],
+    "SANDSTONE": [
+      "rock"
+    ],
+    "AMETHYST": [
+      "rock"
+    ],
+    "TOURMALINE": [
+      "rock"
     ]
   },
 

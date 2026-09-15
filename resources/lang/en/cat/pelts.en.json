@@ -93,6 +93,34 @@
             "one": "brown",
             "many": "rusted brown"
         },
+        "CHALCOPYRITE": {
+            "one": "gray",
+            "many": "colorful"
+        },
+        "RUBY": {
+            "one": "red",
+            "many": "ruby red"
+        },
+        "QUARTZ": {
+            "one": "white",
+            "many": "shimmering"
+        },
+        "SAPPHIRE": {
+            "one": "blue",
+            "many": "sapphire blue"
+        },
+        "SANDSTONE": {
+            "one": "tan",
+            "many": "tan"
+        },
+        "AMETHYST": {
+            "one": "violet",
+            "many": "violet"
+        },
+        "TOURMALINE": {
+            "one": "red-green",
+            "many": "red-green"
+        },
         "SingleColour": "single color",
         "SingleColour_long": "%{color}",
         "TwoColour": "two color",
