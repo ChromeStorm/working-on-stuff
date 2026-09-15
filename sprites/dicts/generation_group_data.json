@@ -22,7 +22,14 @@
             "GOLDEN-BROWN": "brown",
             "DARKBROWN": "brown",
             "CHOCOLATE": "brown",
-            "RUST": "brown"
+            "RUST": "brown",
+            "CHALCOPYRITE": "rock",
+            "RUBY": "rock",
+            "QUARTZ": "rock",
+            "SAPPHIRE": "rock",
+            "SANDSTONE": "rock",
+            "AMETHYST": "rock",
+            "TOURMALINE": "rock"
         },
         "pattern_types": {
             "Tabby": "tabbies",
