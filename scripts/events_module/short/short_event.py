@@ -489,7 +489,7 @@ class ShortEvent:
                     first_cat = possible_parent[0]
                     if first_cat == first_kit:
                         continue
-                    if not first_cat.gender == "female" and not get_clan_setting(
+                    if not first_cat.gender == "unaligned" and not get_clan_setting(
                         "same sex birth"
                     ):
                         continue

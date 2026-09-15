@@ -272,12 +272,12 @@ class ProfileScreen(Screens):
                 ]:
                     self.the_cat.genderalign = self.the_cat.gender
                 elif (
-                    self.the_cat.gender == "male"
+                    self.the_cat.gender == "unaligned"
                     and self.the_cat.genderalign == "female"
                 ):
                     self.the_cat.genderalign = self.the_cat.gender
                 elif (
-                    self.the_cat.gender == "female"
+                    self.the_cat.gender == "unaligned"
                     and self.the_cat.genderalign == "male"
                 ):
                     self.the_cat.genderalign = self.the_cat.gender
@@ -285,12 +285,12 @@ class ProfileScreen(Screens):
                 # if the cat is cis (gender & gender align are the same) then set them to trans
                 # cis males -> trans female first
                 elif (
-                    self.the_cat.gender == "male" and self.the_cat.genderalign == "male"
+                    self.the_cat.gender == "unaligned" and self.the_cat.genderalign == "male"
                 ):
                     self.the_cat.genderalign = "trans female"
                 # cis females -> trans male
                 elif (
-                    self.the_cat.gender == "female"
+                    self.the_cat.gender == "unaligned"
                     and self.the_cat.genderalign == "female"
                 ):
                     self.the_cat.genderalign = "trans male"
@@ -2214,12 +2214,12 @@ class ProfileScreen(Screens):
 
         elif self.open_tab == "personal":
             # Button to trans or cis the cats.
-            if self.the_cat.gender == "male" and self.the_cat.genderalign == "male":
+            if self.the_cat.gender == "unaligned" and self.the_cat.genderalign == "male":
                 self.cis_trans_button.set_text(
                     "screens.profile.change_gender_transfemale"
                 )
             elif (
-                self.the_cat.gender == "female" and self.the_cat.genderalign == "female"
+                self.the_cat.gender == "unaligned" and self.the_cat.genderalign == "female"
             ):
                 self.cis_trans_button.set_text(
                     "screens.profile.change_gender_transmale"
@@ -2235,9 +2235,9 @@ class ProfileScreen(Screens):
                 "trans male",
             ]:
                 self.cis_trans_button.set_text("screens.profile.change_gender_cis")
-            elif self.the_cat.gender == "male" and self.the_cat.genderalign == "female":
+            elif self.the_cat.gender == "unaligned" and self.the_cat.genderalign == "female":
                 self.cis_trans_button.set_text("screens.profile.change_gender_cis")
-            elif self.the_cat.gender == "female" and self.the_cat.genderalign == "male":
+            elif self.the_cat.gender == "unaligned" and self.the_cat.genderalign == "male":
                 self.cis_trans_button.set_text("screens.profile.change_gender_cis")
             elif self.the_cat.genderalign:
                 self.cis_trans_button.set_text("screens.profile.change_gender_cis")

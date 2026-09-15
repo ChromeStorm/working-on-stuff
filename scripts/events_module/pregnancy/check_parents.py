@@ -75,7 +75,7 @@ def check_second_parent(cat: Cat, second_parent: Cat) -> tuple[bool, bool]:
         elif get_clan_setting("same sex adoption"):
             return True, True
         else:
-            return False, False
+            return True, False
 
     return True, False
 
@@ -91,18 +91,7 @@ def get_second_parent(cat: Cat) -> tuple[Optional[Cat], bool]:
     same_sex_birth_allowed = get_clan_setting("same sex birth")
     coparenting_allowed = get_clan_setting("unmated parentage")
     if cat.mate:
-        if same_sex_birth_allowed:
-            # choose any mate
-            chosen_mate = cat.fetch_cat(choice(cat.mate))
-        else:
-            # choose mate that is opposite sex
-            possible_mates = [
-                cat.fetch_cat(mate_id)
-                for mate_id in cat.mate
-                if cat.fetch_cat(mate_id).gender != cat.gender
-            ]
-            if possible_mates:
-                chosen_mate = choice(possible_mates)
+        chosen_mate = cat.fetch_cat(choice(cat.mate))
     elif not coparenting_allowed:
         # if coparenting is OFF, then an unmated cat can't have a kitten
         return None, False
@@ -151,7 +140,6 @@ def get_second_parent(cat: Cat) -> tuple[Optional[Cat], bool]:
             i
             for i in Cat.all_cats_list
             if i.is_potential_mate(cat, for_love_interest=True)
-            and (same_sex_birth_allowed or i.gender != cat.gender)
             and i.ID not in cat.mate
         ]
 
@@ -198,21 +186,13 @@ def _determine_highest_romantic_relation(
             relationship_with_mate, highest_romantic_relation
         )
         if not love_affair_chance or not int(random() * love_affair_chance):
-            if (
-                same_sex_birth_allowed
-                or cat.gender != highest_romantic_relation.cat_to.gender
-            ):
-                return highest_romantic_relation.cat_to
+            return highest_romantic_relation.cat_to
     # COPARENTING
     elif highest_romantic_relation:
         # Love affair chance if the cat doesn't have a mate:
         coparenting_chance = _get_unmated_coparenting_chance(highest_romantic_relation)
         if not coparenting_chance or not int(random() * coparenting_chance):
-            if (
-                same_sex_birth_allowed
-                or cat.gender != highest_romantic_relation.cat_to.gender
-            ):
-                return highest_romantic_relation.cat_to
+            return highest_romantic_relation.cat_to
 
     return None
 

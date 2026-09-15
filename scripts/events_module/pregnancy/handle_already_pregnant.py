@@ -439,7 +439,7 @@ def _handle_main_birth_event(
     elif (
         not get_clan_setting("same sex birth")
         and any(
-            Cat.fetch_cat(mate_id) and Cat.fetch_cat(mate_id).gender == "female"
+            Cat.fetch_cat(mate_id) and Cat.fetch_cat(mate_id).gender == "unaligned"
             for mate_id in cat.mate
         )
         and other_cat.ID not in cat.mate

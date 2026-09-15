@@ -111,12 +111,12 @@ def create_new_cat_block(
                 give_mates.append(in_event_cats[index])
 
     # determine gender
-    if "male" in attribute_list:
-        gender = "male"
-    elif "female" in attribute_list:
-        gender = "female"
+    if "unaligned" in attribute_list:
+        gender = "unaligned"
+    elif "unaligned" in attribute_list:
+        gender = "unaligned"
     elif "can_birth" in attribute_list and not get_clan_setting("same sex birth"):
-        gender = "female"
+        gender = "unaligned"
     else:
         gender = None
 
@@ -607,7 +607,7 @@ def create_new_cat(
     for index in range(number_of_cats):
         # setting gender
         if not gender:
-            _gender = choice(["female", "male"])
+            _gender = choice(["unaligned"])
         else:
             _gender = gender
 

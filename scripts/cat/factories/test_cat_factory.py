@@ -40,8 +40,8 @@ class TestCatFactory(NewCatFactory):
     @classmethod
     def _get_random_gender_and_genderalign(cls, age, sex, genderalign) -> dict:
         return {
-            "sex": sex if sex else "female",
-            "genderalign": genderalign if genderalign else "female",
+            "sex": sex if sex else "unaligned",
+            "genderalign": genderalign if genderalign else "unaligned",
         }
 
     @classmethod

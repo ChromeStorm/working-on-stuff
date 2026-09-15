@@ -56,7 +56,6 @@ class NewCatFactory(BaseCatFactory, ABC):
                 pelt = pelt
         else:
             pelt = cls._get_random_pelt(
-                gender_dict["sex"],
                 (overrides.get("parent1"), overrides.get("parent2")),
                 age,
                 no_disabling_scars=overrides.get("no_disabling_scars", False),
@@ -241,12 +240,12 @@ class NewCatFactory(BaseCatFactory, ABC):
     @abstractmethod
     def _get_random_gender_and_genderalign(cls, age, sex, genderalign) -> dict:
         gender = {
-            "sex": sex if sex else cls.rng.choice(("male", "female")),
+            "sex": sex if sex else cls.rng.choice(("unaligned")),
         }
         gender["genderalign"] = genderalign if genderalign else gender["sex"]
 
         if genderalign and "trans" in genderalign:
-            gender["sex"] = "female" if genderalign == "trans male" else "male"
+            gender["sex"] = "unaligned" if genderalign == "trans male" else "unaligned"
             return gender
 
         if age.is_baby():
@@ -259,15 +258,14 @@ class NewCatFactory(BaseCatFactory, ABC):
             gender["genderalign"] = "nonbinary"
         elif trans_chance == 1:
             gender["genderalign"] = (
-                "trans male" if gender["sex"] == "female" else "trans female"
+                "trans male" if gender["sex"] == "unaligned" else "trans female" #this needs to be edited to make it pick at random which way to trans the rock
             )
 
         return gender
 
     @staticmethod
-    def _get_random_pelt(gender, parents, age, no_disabling_scars: bool):
+    def _get_random_pelt(parents, age, no_disabling_scars: bool):
         pelt = Pelt.generate_new_pelt(
-            gender,
             tuple(Cat.fetch_cat(i) for i in parents if i),
             age,
         )

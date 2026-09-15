@@ -8,5 +8,4 @@ class NewGenderEnum(Enum):
 
 
 class GenderEnum(Enum):
-    male = "male"
-    female = "female"
+    unaligned = "unaligned"

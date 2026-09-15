@@ -39,7 +39,7 @@ class CatDict(BaseModel):
         MISSING,
         description='Constrains the event to only occur if the cat is within a certain age group. You can also remove the parameter to allow the event to occur for all ages except "newborns", who are only allowed if specifically tagged as such',
     )
-    gender: list[Literal["male", "female", "can_birth"]] | MISSING = Field(
+    gender: list[Literal["unaligned", "can_birth"]] | MISSING = Field(
         MISSING,
         description="Constrains the event to only occur if the cat has a certain birth gender. can_birth will allow either female or male cats dependant upon the player's settings",
     )

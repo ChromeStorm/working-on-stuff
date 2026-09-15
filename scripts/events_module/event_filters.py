@@ -1009,8 +1009,8 @@ def _check_cat_gender(cat, genders: list) -> bool:
         return True
 
     for gender in genders:
-        if gender not in ["male", "female"]:
-            raise ValueError(f"Gender must be one of 'male', 'female'. Got {gender}")
+        if gender not in ["unaligned"]:
+            raise ValueError(f"Gender must be one of 'unaligned'. Got {gender}")
 
     if cat.gender in genders:
         return True

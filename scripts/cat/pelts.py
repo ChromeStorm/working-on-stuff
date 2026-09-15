@@ -455,10 +455,10 @@ class Pelt:
         self._paralyzed = val
 
     @staticmethod
-    def generate_new_pelt(gender: str, parents: tuple = (), age: str = "adult"):
+    def generate_new_pelt(parents: tuple = (), age: str = "adult"):
         new_pelt = Pelt()
 
-        pelt_white = new_pelt.init_pattern_color(parents, gender)
+        pelt_white = new_pelt.init_pattern_color(parents)
         new_pelt.init_white_patches(pelt_white, parents)
         new_pelt.init_sprite()
         new_pelt.init_scars(age)
@@ -597,7 +597,7 @@ class Pelt:
                     )  # choose from the remaining two lists
                     break
 
-    def pattern_color_inheritance(self, parents: tuple = (), gender="female"):
+    def pattern_color_inheritance(self, parents: tuple = ()):
         # setting parent pelt categories
         # We are using a set, since we don't need this to be ordered, and sets deal with removing duplicates.
         par_peltlength = set()
@@ -638,7 +638,7 @@ class Pelt:
         # If this list is empty, something went wrong.
         if not par_peltcolours:
             print("Warning - no parents: pelt randomized")
-            return self.randomize_pattern_color(gender)
+            return self.randomize_pattern_color()
 
         # There is a 1/10 chance for kits to have the exact same pelt as one of their parents
         if not random.randint(
@@ -695,18 +695,13 @@ class Pelt:
         tortie_chance_f = constants.CONFIG["cat_generation"][
             "base_female_tortie"
         ]  # There is a default chance for female tortie
-        tortie_chance_m = constants.CONFIG["cat_generation"]["base_male_tortie"]
         for p_ in par_pelts:
             if p_.name in Pelt.torties:
                 tortie_chance_f = int(tortie_chance_f / 2)
-                tortie_chance_m = tortie_chance_m - 1
                 break
 
         # Determine tortie:
-        if gender == "female":
-            torbie = random.getrandbits(tortie_chance_f) == 1
-        else:
-            torbie = random.getrandbits(tortie_chance_m) == 1
+        torbie = random.getrandbits(tortie_chance_f) == 1
 
         chosen_tortie_base = None
         if torbie:
@@ -807,7 +802,7 @@ class Pelt:
         )
         return chosen_white
 
-    def randomize_pattern_color(self, gender):
+    def randomize_pattern_color(self):
         # ------------------------------------------------------------------------------------------------------------#
         #   PELT
         # ------------------------------------------------------------------------------------------------------------#
@@ -823,11 +818,8 @@ class Pelt:
         # Tortie chance
         # There is a default chance for female tortie, slightly increased for completely random generation.
         tortie_chance_f = constants.CONFIG["cat_generation"]["base_female_tortie"] - 1
-        tortie_chance_m = constants.CONFIG["cat_generation"]["base_male_tortie"]
-        if gender == "female":
-            torbie = random.getrandbits(tortie_chance_f) == 1
-        else:
-            torbie = random.getrandbits(tortie_chance_m) == 1
+        torbie = random.getrandbits(tortie_chance_f) == 1
+
 
         chosen_tortie_base = None
         if torbie:
@@ -874,7 +866,7 @@ class Pelt:
         )
         return chosen_white
 
-    def init_pattern_color(self, parents, gender) -> bool:
+    def init_pattern_color(self, parents) -> bool:
         """Initializes self.name, self.colour, self.length,
         self.tortie_base and determines if the cat
         will have white patche or not.
@@ -883,9 +875,9 @@ class Pelt:
 
         if parents:
             # If the cat has parents, use inheritance to decide pelt.
-            chosen_white = self.pattern_color_inheritance(parents, gender)
+            chosen_white = self.pattern_color_inheritance(parents)
         else:
-            chosen_white = self.randomize_pattern_color(gender)
+            chosen_white = self.randomize_pattern_color()
 
         return chosen_white
 

@@ -102,8 +102,6 @@ class Cat:
         CatRank.LEADER,
     ]
 
-    gender_tags = {"female": "F", "male": "M"}
-
     # EX levels and ranges.
     # Ranges are inclusive to both bounds
     experience_levels_range = {
@@ -188,7 +186,7 @@ class Cat:
         # Public attributes
         self.ID = ID
 
-        self.gender: Literal["male", "female"] = gender_dict["sex"]
+        self.gender: Literal["unaligned"] = gender_dict["sex"]
         self.genderalign = gender_dict["genderalign"]
         if gender_dict.get("pronouns"):  # pronouns are lazy-loaded for new cats
             self.pronouns = gender_dict.get("pronouns")
@@ -457,25 +455,11 @@ class Cat:
 
     @property
     def genderalign_string(self):
-        """
-        Returns the localized genderalign string, if one exists, or the original text if not
-        :return: string for display
-        """
-        # translate it if it's default
-        if self.genderalign in (
-            "female",
-            "male",
-            "trans female",
-            "trans male",
-            "nonbinary",
-        ):
-            return i18n.t(f"general.{self.genderalign}")
-        # otherwise, it's custom - just return it directly
         return self.genderalign
 
     @property
     def gender_string(self):
-        return i18n.t(f"general.{self.gender}")
+        return "unaligned"
 
     def is_alive(self):
         """Check if this cat is alive
@@ -2437,7 +2421,6 @@ class Cat:
                 "name_prefix": self.name.prefix,
                 "name_suffix": self.name.suffix,
                 "specsuffix_hidden": self.name.specsuffix_hidden,
-                "gender": self.gender,
                 "gender_align": self.genderalign,
                 "pronouns": (
                     self._pronouns

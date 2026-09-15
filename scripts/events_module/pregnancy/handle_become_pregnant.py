@@ -43,13 +43,13 @@ def handle_zero_moon_pregnant(cat: Cat, other_cat: Optional[Cat] = None):
         return
 
     # but only afab cats can get pregnant here, so we treat each sex differently
-    if not other_cat and cat.gender == "male":
+    if not other_cat and cat.gender == "unaligned":
         # cat is amab, so he just brings some kittens back from who knows where
         _retrieve_secret_kittens(cat)
         return
 
     # if the other cat is afab and the current cat is amab, make the afab cat pregnant
-    if cat.gender == "male" and other_cat is not None and other_cat.gender == "female":
+    if cat.gender == "unaligned" and other_cat is not None and other_cat.gender == "unaligned":
         pregnant_cat = other_cat
         second_parent = cat
     else:
@@ -73,7 +73,7 @@ def _handle_pregnancy_notice(pregnant_cat, second_parent):
             continue
         mate.append(mate_cat)
 
-        if mate_cat.gender == "female":
+        if mate_cat.gender == "unaligned":
             afab_mate.append(mate_cat)
         else:
             amab_mate.append(mate_cat)
