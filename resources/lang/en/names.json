@@ -340,11 +340,17 @@
     "BLOSSOM": [
     "sun", "beam", "shine", "shell", "honey", "cougar", "owl", "moth", "sable", "dust", "flower"
       ],
+    "DAWN": [
+	"beam", "dawn", "dazzle", "dew", "dream", "drizzle", "egg", "flicker", "glow", "hare", "haze", "moth", "mouse", "shell", "shimmer"
+	],
     "PALEGINGER": [
 	"sun", "beam", "shine", "spark", "shell", "honey", "flash", "lion", "cougar"
     ],
     "GOLDEN": [
 	"sun", "beam", "shine", "spark", "blaze", "honey", "flash", "bee", "lion", "cougar"
+    ],
+    "HONEY": ["sun", "beam", "shine", "spark", "blaze", "honey", "honey", "flash", "bee", "lion", "cougar", "bright", "bee", "root", "bumble",
+    "flower", "gorse"
     ],
     "GINGER": [
 	"burn", "sun", "beam", "shine", "spark", "blaze", "flame", "flare", "ember", "fox", "vixen"
@@ -369,6 +375,9 @@
     ],
     "GOLDEN-BROWN": [
 	"root", "owl", "twig", "wood", "moth", "bark", "branch", "burr"
+    ],
+    "MALLOW": [
+	"root","twig", "wood", "moth", "bark", "branch", "burr", "back"
     ],
     "DARKBROWN": [
 	"root", "bark", "shade", "owl", "oak", "wood", "moth", "branch", "burr"
