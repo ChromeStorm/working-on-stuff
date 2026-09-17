@@ -25,14 +25,14 @@
     "DARKBROWN": "darkbrown",
     "CHOCOLATE": "darkbrown",
     "RUST": "rust",
-    "CHALCOPYRITE": "rock",
-    "RUBY": "rock",
+    "CHALCOPYRITE": "black",
+    "RUBY": "darkginger",
     "QUARTZ": "white",
     "SAPPHIRE": "black",
     "SANDSTONE": "darkginger",
-    "AMETHYST": "rock",
-    "TOURMALINE": "rock",
-    "TURQUOISE": "rock"
+    "AMETHYST": "lilac",
+    "TOURMALINE": "darkgrey",
+    "TURQUOISE": "darkgrey"
   },
   "possible_tints": {
     "basic": ["pink", "gray", "red", "orange", "warmdilute", "patina", "tawny", "densecocoa"],
@@ -50,7 +50,7 @@
     "brown": ["yellow", "purple", "black", "dilute", "cooldilute", "pinkdilute", "earthydilute", "night", "gloaming", "quartz", "denseamber", "densedust"],
     "darkbrown": ["yellow", "purple", "black", "dilute", "cooldilute", "pinkdilute", "earthydilute", "gloaming", "quartz"],
     "rust": ["yellow", "purple", "black", "dilute", "cooldilute", "pinkdilute", "earthydilute", "gloaming", "quartz", "night"],
-    "all": ["pink", "gray", "red", "black", "orange", "yellow", "purple", "blue", "night", "glaoming", "patina", "quartz", "tawny", "none", "dilute", "warmdilute", "cooldilute", "pinkdilute", "earthydilute", "lilacdilute"]
+    "all": ["pink", "gray", "red", "black", "orange", "yellow", "purple", "blue", "night", "glaoming", "patina", "quartz", "tawny", "none", "dilute", "warmdilute", "cooldilute", "pinkdilute", "earthydilute", "lilacdilute", "densecocoa", "densedust", "denseamber"]
   },
   "tint_colours":
   {
