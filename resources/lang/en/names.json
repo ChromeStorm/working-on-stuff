@@ -311,6 +311,9 @@
     ],
     "TURQUOISE": [
       "Rock"
+    ],
+    "EMERALD": [
+      "Emerald"
     ]
   },
 	
@@ -416,7 +419,9 @@
     ],
     "TURQUOISE": [
       "rock"
-    
+    ],
+    "EMERALD": [
+      "rock", "shine"
     ]
   },
 
