@@ -289,31 +289,31 @@
     "Raccoon", "Skulk"
     ],
     "CHALCOPYRITE": [
-      "Rock"
+      "Rock", "Color", "Gold", "Stone", "Stony", "Berry", "Twilight", "Dusk", "Dawn", "Nebulous"
     ],
     "RUBY": [
-      "Rock"
+      "Rock", "Red", "Ruby", "Blood", "Poppy", "Yew", "Cardinal", "Rose"
     ],
     "QUARTZ": [
-      "Rock"
+      "Rock", "Shine", "Shining", "Shimmer", "Sun", "Moon", "Horizon", "Light", "Bright"
     ],
     "SAPPHIRE": [
-      "Rock"
+      "Rock", "Blue", "Azure", "Skulk", "River", "Stream", "Midnight", "Night", "Dark"
     ],
     "SANDSTONE": [
-      "Rock"
+      "Rock", "Sand", "Stone", "Cliff", "Carve", "Red"
     ],
     "AMETHYST": [
-      "Rock"
+      "Rock", "Violet", "Shining", "Shine", "Twilight"
     ],
     "TOURMALINE": [
-      "Rock"
+      "Rock", "Flower"
     ],
     "TURQUOISE": [
-      "Rock"
+      "Rock", "Blue"
     ],
     "EMERALD": [
-      "Emerald"
+      "Emerald", "Basil", "Green", "Fern", "Comfrey", "Ivy"
     ]
   },
 	
