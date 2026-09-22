@@ -467,7 +467,7 @@ class Pelt:
         new_pelt.init_accessories(age)
         new_pelt.init_eyes(parents)
         new_pelt.init_pattern()
-        new_pelt.init_tint() #Chrome look at
+        new_pelt.init_tint() 
 
         return new_pelt
 
@@ -1250,6 +1250,7 @@ class Pelt:
         # Pattern tint
         # Chrome you need to edit this
         # Make it so cats generate with pattern tints, make it so pattern tints clip to the patterns
+        
 
     @property
     def white(self):
