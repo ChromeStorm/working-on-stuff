@@ -1250,10 +1250,22 @@ class Pelt:
                 self.white_patches_tint = None
         else:
             self.white_patches_tint = None
-        # Pattern tint
-        # Chrome you need to edit this
-        # Make it so cats generate with pattern tints, make it so pattern tints clip to the patterns
-        
+
+        # PATTERN TINT
+        if self.name not in ("TwoColour", "SingleColour"):
+            base_tints = sprites.pattern_tints["possible_tints"]["basic"]
+            if self.colour in sprites.pattern_tints["colour_groups"]:
+                color_group = sprites.pattern_tints["colour_groups"].get(self.colour, "warm")
+                color_tints = sprites.pattern_tints["possible_tints"][color_group]
+            else:
+                color_tints = []
+
+            if base_tints or color_tints:
+                self.pattern_tint = choice(base_tints + color_tints)
+            else:
+                self.pattern_tint = None
+        else:
+            self.pattern_tint = None
 
     @property
     def white(self):

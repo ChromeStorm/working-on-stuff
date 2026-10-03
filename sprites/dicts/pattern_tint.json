@@ -24,9 +24,22 @@
     "RUST": "rust"
   },
     "possible_tints": {
-    "basic": ["light", "dark"],
-    "black": ["light"],
-    "gray": ["dark"]
+    "basic": ["light", "dark", "none"],
+    "white": ["light", "dark", "none"],
+    "lightgrey": ["light", "dark", "none"],
+    "darkgrey": ["light", "dark", "none"],
+    "ghost": ["light", "dark", "none"],
+    "black": ["light", "dark", "none"],
+    "cream": ["light", "dark", "none"],
+    "lightginger": ["light", "dark", "none"],
+    "golden": ["light", "dark", "none"],
+    "darkginger": ["light", "dark", "none"],
+    "sienna": ["light", "dark", "none"],
+    "lightbrown": ["light", "dark", "none"],
+    "lilac": ["light", "dark", "none"],
+    "brown": ["light", "dark", "none"],
+    "darkbrown": ["light", "dark", "none"],
+    "rust": ["light", "dark", "none"]
   },
   "tint_colours":
   {
