@@ -508,7 +508,7 @@ def _build_layers(
                 cat, subLayer, layer_dict, colour, sprite
             )
             blit_with_opacity(
-                layer_surface, temp, opacity, special_flags=_get_blend_flags(blend_mode)
+                layer_surface, temp, opacity, special_flags=_get_blend_flags(cat, blend_mode)
             )
 
         return (layer_surface, group_blendmode, group_opacity)
@@ -584,13 +584,20 @@ def blit_with_opacity(
     target.blit(temp, special_flags=special_flags)
 
 
-def _get_blend_flags(mode: str):
+def _get_blend_flags(cat, mode: str):
     """Translate the blend_mode string, as used in the pelt recipes, to the pygame blend flag."""
+
+    if cat.pelt.pattern_tint is None or cat.pelt.pattern_tint in sprites.pattern_tints["tint_colours"]:
+        pattern_blend = pygame.BLEND_RGB_MULT
+    elif cat.pelt.pattern_tint in sprites.pattern_tints["dilute_tint_colours"]:
+        pattern_blend = pygame.BLEND_RGB_ADD
 
     blend_modes = {
         "mask": pygame.BLEND_RGBA_MULT,
         "multiply": pygame.BLEND_RGB_MULT,
+        "add": pygame.BLEND_RGB_ADD,
         "normal": 0,
+        "pattern_blend": pattern_blend,
     }
 
     return blend_modes.get(mode, 0)
