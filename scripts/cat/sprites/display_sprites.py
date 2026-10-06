@@ -547,11 +547,12 @@ def _build_single_layer(
     palette_dict = sprites.PELT_COLOR_PALETTES[colour]
     if recolour:
         if recolour == "pattern_tint":
-            print(cat.pelt.pattern_tint)
             if cat.pelt.pattern_tint is not None and cat.pelt.pattern_tint in sprites.pattern_tints["tint_colours"]:
                 new_colour = tuple(sprites.pattern_tints["tint_colours"][cat.pelt.pattern_tint])
+            elif cat.pelt.pattern_tint is not None and cat.pelt.pattern_tint in sprites.pattern_tints["dilute_tint_colours"]:
+                new_colour = tuple(sprites.pattern_tints["dilute_tint_colours"][cat.pelt.pattern_tint])
             else:
-                new_colour = "#FFFFFF"
+                new_colour = "#FFFFFF" #If the cat has no tint, the blend mode for the tint defaults to multiply. White does not show up in a multiply blend mode.
         else:
             new_colour = palette_dict[recolour]
         recolour_surface = layer_surface = pygame.Surface(
@@ -587,15 +588,16 @@ def blit_with_opacity(
 def _get_blend_flags(cat, mode: str):
     """Translate the blend_mode string, as used in the pelt recipes, to the pygame blend flag."""
 
-    if cat.pelt.pattern_tint is None or cat.pelt.pattern_tint in sprites.pattern_tints["tint_colours"]:
+    if cat.pelt.pattern_tint in sprites.pattern_tints["tint_colours"]:
         pattern_blend = pygame.BLEND_RGB_MULT
     elif cat.pelt.pattern_tint in sprites.pattern_tints["dilute_tint_colours"]:
         pattern_blend = pygame.BLEND_RGB_ADD
+    else:
+        pattern_blend = pygame.BLEND_RGB_MULT
 
     blend_modes = {
         "mask": pygame.BLEND_RGBA_MULT,
         "multiply": pygame.BLEND_RGB_MULT,
-        "add": pygame.BLEND_RGB_ADD,
         "normal": 0,
         "pattern_blend": pattern_blend,
     }

@@ -25,7 +25,7 @@
   },
     "possible_tints": {
     "basic": ["light", "dark"],
-    "white": ["light", "dark"],
+    "white": ["dark"],
     "lightgrey": ["light", "dark"],
     "darkgrey": ["light", "dark"],
     "ghost": ["light"],
@@ -43,11 +43,11 @@
   },
   "tint_colours":
   {
-    "dark": [0,0,0],
+    "dark": [195, 195, 195],
     "none": null
   },
   "dilute_tint_colours":
   {
-    "light": [255,255,255]
+    "light": [20, 20, 20]
   }
 }
