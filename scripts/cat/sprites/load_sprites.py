@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 class Sprites:
     cat_tints = {}
     white_patches_tints = {}
-    pattern_tints = {} #Chrome edit
+    pattern_tints = {}
     clan_symbols = []
     empty_indexes = []
 
@@ -175,7 +175,7 @@ class Sprites:
             ) as read_file:
                 self.pattern_tints = ujson.loads(read_file.read())
         except IOError:
-            print("ERROR: Reading Pattern Tints") #Chrome added this
+            print("ERROR: Reading Pattern Tints")
 
     def spritesheet(self, a_file, name):
         """

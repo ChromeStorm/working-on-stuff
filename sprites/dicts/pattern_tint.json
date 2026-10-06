@@ -24,27 +24,30 @@
     "RUST": "rust"
   },
     "possible_tints": {
-    "basic": ["light", "dark", "none"],
-    "white": ["light", "dark", "none"],
-    "lightgrey": ["light", "dark", "none"],
-    "darkgrey": ["light", "dark", "none"],
-    "ghost": ["light", "dark", "none"],
-    "black": ["light", "dark", "none"],
-    "cream": ["light", "dark", "none"],
-    "lightginger": ["light", "dark", "none"],
-    "golden": ["light", "dark", "none"],
-    "darkginger": ["light", "dark", "none"],
-    "sienna": ["light", "dark", "none"],
-    "lightbrown": ["light", "dark", "none"],
-    "lilac": ["light", "dark", "none"],
-    "brown": ["light", "dark", "none"],
-    "darkbrown": ["light", "dark", "none"],
-    "rust": ["light", "dark", "none"]
+    "basic": ["light", "dark"],
+    "white": ["light", "dark"],
+    "lightgrey": ["light", "dark"],
+    "darkgrey": ["light", "dark"],
+    "ghost": ["light"],
+    "black": ["light"],
+    "cream": ["light", "dark"],
+    "lightginger": ["light", "dark"],
+    "golden": ["light", "dark"],
+    "darkginger": ["light", "dark"],
+    "sienna": ["light", "dark"],
+    "lightbrown": ["light", "dark"],
+    "lilac": ["light", "dark"],
+    "brown": ["light", "dark"],
+    "darkbrown": ["light", "dark"],
+    "rust": ["light", "dark"]
   },
   "tint_colours":
   {
-    "dark": [0, 0, 0],
-    "light": [100, 100, 100],
+    "dark": [0,0,0],
     "none": null
+  },
+  "dilute_tint_colors":
+  {
+    "light": [255,255,255]
   }
 }

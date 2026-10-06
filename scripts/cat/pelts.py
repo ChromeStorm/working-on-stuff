@@ -247,7 +247,7 @@ class Pelt:
         opacity: int = 100,
         scars: list = None,
         tint: str | None = None,
-        pattern_tint: str | None = None, # Chrome edit
+        pattern_tint: str | None = None,
         skin: str = "BLACK",
         white_patches_tint: str | None = None,
         newborn_sprite: str = None,
@@ -283,7 +283,7 @@ class Pelt:
         )
         self.tint = tint
         self.white_patches_tint = white_patches_tint
-        self.pattern_tint = pattern_tint #Chrome edit
+        self.pattern_tint = pattern_tint
         self.screen_scale = scripts.game_structure.screen_settings.screen_scale
 
         # converting old pose numbers into names

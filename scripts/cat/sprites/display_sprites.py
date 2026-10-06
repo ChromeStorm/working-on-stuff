@@ -546,7 +546,14 @@ def _build_single_layer(
 
     palette_dict = sprites.PELT_COLOR_PALETTES[colour]
     if recolour:
-        new_colour = palette_dict[recolour]
+        if recolour == "pattern_tint":
+            print(cat.pelt.pattern_tint)
+            if cat.pelt.pattern_tint is not None and cat.pelt.pattern_tint in sprites.pattern_tints["tint_colours"]:
+                new_colour = tuple(sprites.pattern_tints["tint_colours"][cat.pelt.pattern_tint])
+            else:
+                new_colour = "#FFFFFF"
+        else:
+            new_colour = palette_dict[recolour]
         recolour_surface = layer_surface = pygame.Surface(
             (sprites.size, sprites.size), pygame.HWSURFACE | pygame.SRCALPHA
         )
